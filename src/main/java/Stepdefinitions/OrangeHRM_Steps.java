@@ -66,12 +66,12 @@ public class OrangeHRM_Steps {
 		
 		Assert.assertEquals(currenturl, "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
 		
-		try {
+	/*	try {
 			base.driver.switchTo().alert().accept();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}		
+		} */		
 		
 	}
 

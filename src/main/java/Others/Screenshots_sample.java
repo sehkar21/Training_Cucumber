@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.*;
 
 import Utils.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import jdk.javadoc.internal.doclets.toolkit.util.DocFinder.Output;
+
 
 public class Screenshots_sample {
 

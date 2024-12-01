@@ -7,13 +7,15 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features ={"C:\\Users\\sehka\\eclipse-workspace\\Trianing-cucumber\\Training_Cucumber\\src\\test\\java\\Features\\OrangeHRM_Login.feature",
-				"C:\\Users\\sehka\\eclipse-workspace\\Trianing-cucumber\\Training_Cucumber\\src\\test\\java\\Features\\OrangeHRM_Recruitment.feature"},
+		features ={"src\\test\\java\\Features\\OrangeHRM_Login.feature",
+				"src\\test\\java\\Features\\OrangeHRM_Recruitment.feature",
+				"src\\test\\java\\Features\\MyInfoPage.feature"},
 		glue = "Stepdefinitions",
 		dryRun=false,
-		plugin={"pretty", "html:target/cucumber-reports.html"},
-		monochrome=true,
-		tags="@smoke"
+		plugin={"pretty", "html:target/cucumber-reports.html","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+		tags = ("@smoke or @sanity"),
+		monochrome=true
+		
 		)
 
 
