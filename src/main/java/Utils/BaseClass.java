@@ -10,6 +10,9 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseClass {
 
+	
+	public static WebDriver driver =null;
+	
 	public static void getscreenshot(WebDriver driver, String filename) throws IOException
 	{
         TakesScreenshot tk = (TakesScreenshot) driver;

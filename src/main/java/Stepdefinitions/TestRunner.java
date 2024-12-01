@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue = "Stepdefinitions",
 		dryRun=false,
 		plugin={"pretty", "html:target/cucumber-reports.html"},
-		monochrome=true
+		monochrome=true,
+		tags="@smoke"
 		)
 
 
