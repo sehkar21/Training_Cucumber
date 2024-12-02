@@ -10,12 +10,12 @@ import io.cucumber.junit.CucumberOptions;
 		features ={"src\\test\\java\\Features\\OrangeHRM_Login.feature",
 				"src\\test\\java\\Features\\OrangeHRM_Recruitment.feature",
 				"src\\test\\java\\Features\\MyInfoPage.feature"},
-		glue = "Stepdefinitions",
+		glue = {"Stepdefinitions","Hooks"},
 		dryRun=false,
 		plugin={"pretty", "html:target/cuucmber-reports/cucumber-reports.html",
 				"json:target/cuucmber-reports/cucumber-reports.json",
 				"junit:target/cuucmber-reports/cucumber-reports.xml"},
-		tags = ("~@smoke or @sanity"),
+		tags = ("@reg or ~@sanity"),
 		monochrome=true
 		
 		)

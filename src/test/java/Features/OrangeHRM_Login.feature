@@ -1,7 +1,7 @@
 @smoke
 Feature: Login into OrangeHRM
 
-  @tag1
+  @reg
   Scenario Outline: Login into OrangeHRM
     Given i launch the browser and enter into orangeHRM site
     Given user enters "<username>" and "<password>"
@@ -25,4 +25,11 @@ Feature: Login into OrangeHRM
     Then i apply leave 
     And i click on the submit button
     
+    @reg
+    Scenario: checking the performance in OrangeHRM
+    Given user clicks on the performance left panel
+    Then user clicks on the configure tab and clicks on the KPI tracker
+    Then user selects the job Title
+    Then user clicks on the search button to see the results
+        
     
