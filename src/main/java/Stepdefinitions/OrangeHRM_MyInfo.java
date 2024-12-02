@@ -1,6 +1,7 @@
 package Stepdefinitions;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import com.objectRepo.MyInfopageclass;
 
@@ -42,10 +43,13 @@ public class OrangeHRM_MyInfo {
 	}
 
 	@Then("user saves the page")
-	public void user_saves_the_page() {
+	public void user_saves_the_page() throws IOException, InterruptedException {
 
 		MyInfopageclass myinfo = new MyInfopageclass(base);
 		myinfo.myinfosavebtn();
+		Thread.sleep(4000);
+		BaseClass.getscreenshot(base.driver, "myinfo.png");
+		base.driver.close();
 		
 	}
 

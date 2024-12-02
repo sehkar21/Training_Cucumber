@@ -12,8 +12,10 @@ import io.cucumber.junit.CucumberOptions;
 				"src\\test\\java\\Features\\MyInfoPage.feature"},
 		glue = "Stepdefinitions",
 		dryRun=false,
-		plugin={"pretty", "html:target/cucumber-reports.html","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-		tags = ("@smoke or @sanity"),
+		plugin={"pretty", "html:target/cuucmber-reports/cucumber-reports.html",
+				"json:target/cuucmber-reports/cucumber-reports.json",
+				"junit:target/cuucmber-reports/cucumber-reports.xml"},
+		tags = ("~@smoke or @sanity"),
 		monochrome=true
 		
 		)
