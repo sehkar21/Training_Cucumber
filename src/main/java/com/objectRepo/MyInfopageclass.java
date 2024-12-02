@@ -21,8 +21,8 @@ public class MyInfopageclass {
 	}
 	
    	By MyInfoleftpanel = By.xpath("//span[normalize-space()='My Info']");
-    By Myinfofirstname = By.xpath("//input[@placeholder='First Name']"); 
-	By Myinfomiddlename = By.xpath("//input[@placeholder='Middle Name']");
+    By Myinfofirstname = By.cssSelector("input[placeholder='First Name']"); 
+	By Myinfomiddlename = By.cssSelector("input[placeholder='Middle Name']");
 	By Myinfolastname = By.xpath("//input[@placeholder='Last Name']");
 	By Myinfoempid = By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/input[1]");
 	By Myinfootherid = By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[2]/div[1]/div[2]/input[1]");

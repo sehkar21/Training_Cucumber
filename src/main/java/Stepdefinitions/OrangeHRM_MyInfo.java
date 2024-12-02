@@ -32,7 +32,6 @@ public class OrangeHRM_MyInfo {
 		
 		MyInfopageclass myinfo = new MyInfopageclass(base);
 		myinfo.Myinfofirstname();
-	
 		myinfo.Myinfomiddlename();
 		myinfo.Myinfolastname();
 	myinfo.Myinfoempid();
