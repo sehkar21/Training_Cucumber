@@ -48,9 +48,6 @@ public class OrangeHRM_Steps  {
 
 	base.driver.findElement(By.name("password")).sendKeys(password);
 	
-	
-	
-		
 
 		
 	}

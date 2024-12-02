@@ -2,7 +2,7 @@
 Feature: Login into OrangeHRM
 
   @reg
-  Scenario Outline: Login into OrangeHRM
+    Scenario Outline: verifying the homepage
     Given i launch the browser and enter into orangeHRM site
     Given user enters "<username>" and "<password>"
     And click on the login button 
